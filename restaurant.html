@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Food Sprint</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial,sans-serif}
+body{background:#f5f5f5;color:#333}
+header{position:sticky;top:0;background:rgba(226,55,68,.95);padding:16px 60px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:30px;font-weight:700;color:#fff}
+nav a{color:#fff;text-decoration:none;margin-left:24px;font-weight:600}
+nav a:hover{color:#ffd54f}
+.hero{height:70vh;background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1400&q=80') center/cover;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff;text-align:center}
+.hero h1{font-size:54px}
+.hero p{margin:15px 0 25px;font-size:20px;max-width:700px}
+.search{display:flex;width:70%;max-width:700px}
+.search input{flex:1;padding:16px;border:none;border-radius:40px 0 0 40px}
+.search button{padding:16px 28px;border:none;background:#ff9800;color:#fff;border-radius:0 40px 40px 0}
+.section{padding:50px 8%}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:20px}
+.feature,.card{background:#fff;border-radius:16px;box-shadow:0 8px 18px rgba(0,0,0,.12)}
+.feature{padding:25px;text-align:center}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px}
+.card{overflow:hidden;transition:.3s}
+.card:hover{transform:translateY(-8px)}
+.card img{width:100%;height:220px;object-fit:cover}
+.content{padding:18px}
+.content h2{margin-bottom:10px}
+.content p{margin:8px 0;line-height:1.5}
+.badge{display:inline-block;background:#16a34a;color:#fff;padding:5px 10px;border-radius:18px}
+.offer{display:inline-block;background:#ffe082;color:#7a4d00;padding:5px 10px;border-radius:18px;margin-top:8px}
+.status{color:green;font-weight:bold}
+.btn{display:block;margin-top:15px;background:#e23744;color:#fff;text-decoration:none;padding:12px;border-radius:30px;text-align:center}
+.review{background:#fff;border-radius:16px;padding:30px;box-shadow:0 8px 18px rgba(0,0,0,.12);text-align:center}
+footer{background:#222;color:#fff;text-align:center;padding:30px;margin-top:40px}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">🍽️ Food Sprint</div>
+<nav>
+<a href="#">Home</a><a href="#">Restaurants</a><a href="#">Offers</a><a href="#">Login</a><a href="#">Sign Up</a>
+</nav>
+</header>
+<section class="hero">
+<h1>Happiness Delivered to Your Doorstep ❤️</h1>
+<p>Explore top-rated restaurants, discover amazing offers, and enjoy delicious meals with fast, safe delivery.</p>
+<div class="search">
+<input placeholder="Search restaurants, dishes or cuisines..."/>
+<button>Search</button>
+</div>
+</section>
+<section class="section">
+<h2 style="text-align:center;margin-bottom:30px">Why Choose Food Sprint?</h2>
+<div class="features">
+<div class="feature"><h3>🚀 Fast Delivery</h3><p>Fresh food delivered quickly.</p></div>
+<div class="feature"><h3>⭐ Quality Assured</h3><p>Trusted restaurants near you.</p></div>
+<div class="feature"><h3>⭐ Top Rated</h3><p>Highly rated restaurants.</p></div>
+<div class="feature"><h3>🎁 Daily Offers</h3><p>Exclusive discounts every day.</p></div>
+</div>
+</section>
+<section class="section">
+<h2 style="text-align:center;margin-bottom:30px">Popular Restaurants</h2>
+<div class="cards">
+<div class="card">
+<img alt="Empire Restaurant" src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="content">
+<h2>Empire Restaurant</h2>
+<p><strong>Cuisine Type:</strong> North Indian • Biryani</p>
+<p><strong>Delivery Time:</strong> 25 Minutes</p>
+<p><strong>Address:</strong> BTM Layout</p>
+<p><strong>Rating:</strong> <span class="badge">⭐ 4.8</span></p>
+<p><strong>Status:</strong> <span class="status">✔ Active</span></p>
+<p><strong>Image Path:</strong> images/empire.jpg</p>
+<span class="offer">🎉 Flat 30% OFF</span>
+<a class="btn" href="menu.html">View Restaurant</a>
+</div>
+</div>
+<div class="card">
+<img alt="Meghana Foods" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="content">
+<h2>Meghana Foods</h2>
+<p><strong>Cuisine Type:</strong> Hyderabadi Biryani</p>
+<p><strong>Delivery Time:</strong> 30 Minutes</p>
+<p><strong>Address:</strong> Indiranagar</p>
+<p><strong>Rating:</strong> <span class="badge">⭐ 4.9</span></p>
+<p><strong>Status:</strong> <span class="status">✔ Active</span></p>
+<p><strong>Image Path:</strong> images/meghana.jpg</p>
+<span class="offer">🎉 Flat 30% OFF</span>
+<a class="btn" href="menu.html">View Restaurant</a>
+</div>
+</div>
+<div class="card">
+<img alt="Pizza Hub" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="content">
+<h2>Pizza Hub</h2>
+<p><strong>Cuisine Type:</strong> Pizza • Italian</p>
+<p><strong>Delivery Time:</strong> 20 Minutes</p>
+<p><strong>Address:</strong> Koramangala</p>
+<p><strong>Rating:</strong> <span class="badge">⭐ 4.7</span></p>
+<p><strong>Status:</strong> <span class="status">✔ Active</span></p>
+<p><strong>Image Path:</strong> images/pizzahub.jpg</p>
+<span class="offer">🎉 Flat 30% OFF</span>
+<a class="btn" href="menu.html">View Restaurant</a>
+</div>
+</div>
+<div class="card">
+<img alt="Udupi Grand" src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="content">
+<h2>Udupi Grand</h2>
+<p><strong>Cuisine Type:</strong> South Indian</p>
+<p><strong>Delivery Time:</strong> 18 Minutes</p>
+<p><strong>Address:</strong> Jayanagar</p>
+<p><strong>Rating:</strong> <span class="badge">⭐ 4.6</span></p>
+<p><strong>Status:</strong> <span class="status">✔ Active</span></p>
+<p><strong>Image Path:</strong> images/udupi.jpg</p>
+<span class="offer">🎉 Flat 30% OFF</span>
+<a class="btn" href="menu.html">View Restaurant</a>
+</div>
+</div>
+<div class="card">
+<img alt="Burger Point" src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/>
+<div class="content">
+<h2>Burger Point</h2>
+<p><strong>Cuisine Type:</strong> Burgers</p>
+<p><strong>Delivery Time:</strong> 22 Minutes</p>
+<p><strong>Address:</strong> Whitefield</p>
+<p><strong>Rating:</strong> <span class="badge">⭐ 4.5</span></p>
+<p><strong>Status:</strong> <span class="status">✔ Active</span></p>
+<p><strong>Image Path:</strong> images/burger.jpg</p>
+<span class="offer">🎉 Flat 30% OFF</span>
+<a class="btn" href="menu.html">View Restaurant</a>
+</div>
+</div>
+<div class="card"><img alt="Royal Chinese" src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/><div class="content">
+<h2>Royal Chinese</h2>
+<p><strong>Cuisine Type:</strong> Chinese</p>
+<p><strong>Delivery Time:</strong> 28 Minutes</p>
+<p><strong>Address:</strong> HSR Layout</p>
+<p><strong>Rating:</strong> <span class="badge">⭐ 4.4</span></p>
+<p><strong>Status:</strong> <span class="status">✔ Active</span></p>
+<p><strong>Image Path:</strong> images/royal.jpg</p>
+<span class="offer">🎉 Flat 25% OFF</span>
+<a class="btn" href="menu.html">View Restaurant</a>
+</div></div><div class="card"><img alt="Barbeque Nation" src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/><div class="content">
+<h2>Barbeque Nation</h2>
+<p><strong>Cuisine Type:</strong> Barbeque</p>
+<p><strong>Delivery Time:</strong> 35 Minutes</p>
+<p><strong>Address:</strong> MG Road</p>
+<p><strong>Rating:</strong> <span class="badge">⭐ 4.8</span></p>
+<p><strong>Status:</strong> <span class="status">✔ Active</span></p>
+<p><strong>Image Path:</strong> images/bbq.jpg</p>
+<span class="offer">🎉 Flat 25% OFF</span>
+<a class="btn" href="menu.html">View Restaurant</a>
+</div></div><div class="card"><img alt="Cafe Coffee Day" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/><div class="content">
+<h2>Cafe Coffee Day</h2>
+<p><strong>Cuisine Type:</strong> Cafe</p>
+<p><strong>Delivery Time:</strong> 15 Minutes</p>
+<p><strong>Address:</strong> Electronic City</p>
+<p><strong>Rating:</strong> <span class="badge">⭐ 4.3</span></p>
+<p><strong>Status:</strong> <span class="status">✔ Active</span></p>
+<p><strong>Image Path:</strong> images/ccd.jpg</p>
+<span class="offer">🎉 Flat 25% OFF</span>
+<a class="btn" href="menu.html">View Restaurant</a>
+</div></div><div class="card"><img alt="KFC" src="https://images.unsplash.com/photo-1562967916-eb82221dfb36?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/><div class="content">
+<h2>KFC</h2>
+<p><strong>Cuisine Type:</strong> Fried Chicken</p>
+<p><strong>Delivery Time:</strong> 20 Minutes</p>
+<p><strong>Address:</strong> Malleshwaram</p>
+<p><strong>Rating:</strong> <span class="badge">⭐ 4.6</span></p>
+<p><strong>Status:</strong> <span class="status">✔ Active</span></p>
+<p><strong>Image Path:</strong> images/kfc.jpg</p>
+<span class="offer">🎉 Flat 25% OFF</span>
+<a class="btn" href="menu.html">View Restaurant</a>
+</div></div><div class="card"><img alt="Subway" src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&amp;fit=crop&amp;w=800&amp;q=80"/><div class="content">
+<h2>Subway</h2>
+<p><strong>Cuisine Type:</strong> Sandwiches</p>
+<p><strong>Delivery Time:</strong> 18 Minutes</p>
+<p><strong>Address:</strong> Rajajinagar</p>
+<p><strong>Rating:</strong> <span class="badge">⭐ 4.5</span></p>
+<p><strong>Status:</strong> <span class="status">✔ Active</span></p>
+<p><strong>Image Path:</strong> images/subway.jpg</p>
+<span class="offer">🎉 Flat 25% OFF</span>
+<a class="btn" href="menu.html">View Restaurant</a>
+</div></div></div>
+</section>
+<section class="section">
+<div class="review">
+<h2>❤️ Loved by Thousands</h2>
+<p style="margin-top:15px">⭐⭐⭐⭐⭐</p>
+<p style="margin-top:15px">Amazing food, fast delivery, and excellent customer service.</p>
+<p style="margin-top:12px"><strong>— Happy Customer 😊</strong></p>
+</div>
+</section>
+<footer>
+<h2>🍽️ Food Sprint</h2>
+<p>Fresh Food • Fast Delivery • Happy Customers</p>
+<p>Email: support@foodsprint.com | Phone: +91 9876543210</p>
+<p>© 2026 Food Sprint. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

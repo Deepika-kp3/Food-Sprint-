@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Empire Restaurant Menu</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#f4f4f4;
+}
+
+header{
+background:#e23744;
+color:white;
+padding:20px;
+text-align:center;
+font-size:32px;
+font-weight:bold;
+}
+
+.subheading{
+text-align:center;
+padding:20px;
+color:#555;
+font-size:18px;
+}
+
+.container{
+width:92%;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+padding-bottom:40px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 20px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.content{
+padding:18px;
+}
+
+.content h2{
+margin-bottom:10px;
+color:#333;
+}
+
+.price{
+color:#e23744;
+font-size:22px;
+font-weight:bold;
+margin:10px 0;
+}
+
+.rating{
+display:inline-block;
+background:#16a34a;
+color:white;
+padding:5px 12px;
+border-radius:20px;
+margin-top:10px;
+}
+
+.available{
+color:green;
+font-weight:bold;
+margin-top:10px;
+}
+
+.btn{
+display:block;
+margin-top:18px;
+text-align:center;
+text-decoration:none;
+background:#e23744;
+color:white;
+padding:12px;
+border-radius:8px;
+font-weight:bold;
+}
+
+.btn:hover{
+background:#c2185b;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+Empire Restaurant Menu
+</header>
+
+<div class="subheading">
+Choose your favourite food and enjoy delicious meals.
+</div>
+
+<div class="container">
+
+<div class="card">
+<img src="images/chickenbiryani.jpg">
+<div class="content">
+<h2>Chicken Biryani</h2>
+<p>Authentic Hyderabadi Dum Biryani served with raita.</p>
+<div class="price">₹249</div>
+<div class="rating">⭐ 4.9</div>
+<p class="available">Available</p>
+<a href="#" class="btn">Add to Cart</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/chicken65.jpg">
+<div class="content">
+<h2>Chicken 65</h2>
+<p>Spicy crispy chicken starter served hot.</p>
+<div class="price">₹199</div>
+<div class="rating">⭐ 4.8</div>
+<p class="available">Available</p>
+<a href="#" class="btn">Add to Cart</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/paneerbuttermasala.jpg">
+<div class="content">
+<h2>Paneer Butter Masala</h2>
+<p>Rich creamy paneer curry with butter gravy.</p>
+<div class="price">₹229</div>
+<div class="rating">⭐ 4.7</div>
+<p class="available">Available</p>
+<a href="#" class="btn">Add to Cart</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/friedrice.jpg">
+<div class="content">
+<h2>Veg Fried Rice</h2>
+<p>Chinese style fried rice with vegetables.</p>
+<div class="price">₹179</div>
+<div class="rating">⭐ 4.6</div>
+<p class="available">Available</p>
+<a href="#" class="btn">Add to Cart</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/hakkanoodles.jpg">
+<div class="content">
+<h2>Hakka Noodles</h2>
+<p>Delicious Indo-Chinese noodles with veggies.</p>
+<div class="price">₹189</div>
+<div class="rating">⭐ 4.7</div>
+<p class="available">Available</p>
+<a href="#" class="btn">Add to Cart</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/pizza.jpg">
+<div class="content">
+<h2>Margherita Pizza</h2>
+<p>Loaded with mozzarella cheese and herbs.</p>
+<div class="price">₹299</div>
+<div class="rating">⭐ 4.8</div>
+<p class="available">Available</p>
+<a href="#" class="btn">Add to Cart</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/burger.jpg">
+<div class="content">
+<h2>Chicken Burger</h2>
+<p>Juicy chicken burger with fresh veggies.</p>
+<div class="price">₹179</div>
+<div class="rating">⭐ 4.7</div>
+<p class="available">Available</p>
+<a href="#" class="btn">Add to Cart</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/fries.jpg">
+<div class="content">
+<h2>French Fries</h2>
+<p>Crispy golden fries with tomato ketchup.</p>
+<div class="price">₹99</div>
+<div class="rating">⭐ 4.6</div>
+<p class="available">Available</p>
+<a href="#" class="btn">Add to Cart</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/milkshake.jpg">
+<div class="content">
+<h2>Chocolate Milkshake</h2>
+<p>Thick chocolate shake with ice cream.</p>
+<div class="price">₹149</div>
+<div class="rating">⭐ 4.9</div>
+<p class="available">Available</p>
+<a href="#" class="btn">Add to Cart</a>
+</div>
+</div>
+
+<div class="card">
+<img src="images/sundae.jpg">
+<div class="content">
+<h2>Ice Cream Sundae</h2>
+<p>Vanilla ice cream topped with chocolate syrup.</p>
+<div class="price">₹129</div>
+<div class="rating">⭐ 5.0</div>
+<p class="available">Available</p>
+<a href="#" class="btn">Add to Cart</a>
+</div>
+</div>
+
+</div>
+
+<footer>
+🍽 Food Sprint | Fresh Food • Fast Delivery • Happy Customers
+</footer>
+
+</body>
+</html>

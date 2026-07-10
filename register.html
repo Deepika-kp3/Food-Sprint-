@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register - Food Delivery</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1500&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.container{
+    width:450px;
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 15px 35px rgba(0,0,0,.3);
+    border-left:8px solid #e23744;
+    position:relative;
+    overflow:hidden;
+}
+
+/* Top Red Line */
+.container::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:8px;
+    background:#e23744;
+}
+
+/* Bottom Red Line */
+.container::after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:8px;
+    background:#e23744;
+}
+
+.container h2{
+    text-align:center;
+    color:#e23744;
+    margin-bottom:30px;
+    position:relative;
+}
+
+.container h2::before,
+.container h2::after{
+    content:"";
+    position:absolute;
+    top:50%;
+    width:70px;
+    height:3px;
+    background:#e23744;
+}
+
+.container h2::before{
+    left:0;
+}
+
+.container h2::after{
+    right:0;
+}
+
+.input-group{
+    margin-bottom:16px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:bold;
+    color:#444;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    font-size:15px;
+    transition:.3s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus{
+    border-color:#e23744;
+    box-shadow:0 0 8px rgba(226,55,68,.4);
+}
+
+textarea{
+    resize:none;
+    height:80px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    background:linear-gradient(90deg,#e23744,#ff5f6d);
+    color:white;
+    font-size:17px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+    font-weight:bold;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(226,55,68,.4);
+}
+
+.login-link{
+    text-align:center;
+    margin-top:20px;
+}
+
+.login-link a{
+    text-decoration:none;
+    color:#e23744;
+    font-weight:bold;
+}
+
+.login-link a:hover{
+    text-decoration:underline;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Create Account</h2>
+
+<form action="register" method="post">
+
+<div class="input-group">
+<label>Full Name</label>
+<input type="text" name="name" placeholder="Enter your full name" required>
+</div>
+
+<div class="input-group">
+<label>Email</label>
+<input type="email" name="email" placeholder="Enter your email" required>
+</div>
+
+<div class="input-group">
+<label>Password</label>
+<input type="password" name="password" placeholder="Create password" required>
+</div>
+
+<div class="input-group">
+<label>Confirm Password</label>
+<input type="password" name="confirmPassword" placeholder="Confirm password" required>
+</div>
+
+<div class="input-group">
+<label>Phone Number</label>
+<input type="tel" name="phone" placeholder="Enter phone number">
+</div>
+
+<div class="input-group">
+<label>Address</label>
+<textarea name="address" placeholder="Enter your address"></textarea>
+</div>
+
+<div class="input-group">
+<label>Select Role</label>
+<select name="role" required>
+    <option value="">Choose Role</option>
+    <option value="CUSTOMER">Customer</option>
+    <option value="ADMIN">Admin</option>
+</select>
+</div>
+
+<button type="submit">Register</button>
+
+<div class="login-link">
+Already have an account?
+<a href="login.html">Login</a>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
